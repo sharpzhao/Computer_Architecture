@@ -20,6 +20,7 @@ bookmarksopenlevel=2]{hyperref}
 \usepackage{tikz}
 
 \usepackage{geometry}
+\usepackage{hyperref}
 \geometry{total={210mm,297mm},
 left=25mm,right=25mm,%
 bindingoffset=0mm, top=20mm,bottom=20mm}
@@ -81,9 +82,24 @@ bindingoffset=0mm, top=20mm,bottom=20mm}
 \section*{Qustion 1}
 
 
-
+Final Graphics:\\
 \includegraphics{plot}
+\\
+How I get these data:
 
+For PC:\\
+1. first I get all CPU name from \url{http://browser.geekbench.com/processor-benchmarks}. Then get the release date from \url{https://www.cpubenchmark.net/cpu.php?cpu=AMD+Phenom+II+X4+960T}, and get the highest score of this particular CPU from \url{http://browser.geekbench.com/geekbench3/search?dir=desc&sort=score&q=} and \url{http://browser.geekbench.com/geekbench3/search?dir=desc&sort=multicore_score&q=}.\\
+2. Get CPU name and release date from \url{http://www.cpu-world.com/Releases/Desktop_CPU_releases_(2013).html} then get highest score as above.\\
+3. get all Intel and AMD cpu from \url{http://browser.geekbench.com/geekbench3/search?&q=intel&page=} and \url{http://browser.geekbench.com/geekbench3/search?&q=AMD&page=} then get release date from \url{https://ark.intel.com/search?q=} and \url{https://www.cpubenchmark.net/cpu.php?cpu=AMD+Phenom+II+X4+960T}\\
+4. Totolly get millions data, then combine them together. But I realized some data is not good cause some user overclocking the CPU. Hence, I search the Score from \url{http://browser.geekbench.com/geekbench3/search} manually. \\
+
+For Mobile:\\
+1. Get CPU name and release date from \url{http://www.cpu-world.com/Releases/Mobile_CPU_releases_(2015).html}\\
+2. Get highest score from \url{http://browser.geekbench.com/geekbench3/search?dir=desc&sort=score&q=} and \url{http://browser.geekbench.com/geekbench3/search?dir=desc&sort=multicore_score&q=}.\\
+3. combine and deal with data.\\
+
+Then plot.\\
+All code and some data is list in \url{https://github.com/sharpzhao/Computer_Architecture}
 \section*{Question 2}
 \subsection*{2.1}
 According to the Amdahl's Law, $f(e) = 0.25$, $Speedup(e) = 20$, hence, the over all speedup is:
